@@ -1,5 +1,6 @@
 package com.coolrexx.beesechurger;
 
+import com.coolrexx.beesechurger.common.registry.BeesechurgerItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
