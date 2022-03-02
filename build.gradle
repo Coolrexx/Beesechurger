@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.0'
+version = '1.18.1-1.0'
 group = 'com.coolrex.beesechurger'
 archivesBaseName = 'beesechurger'
 
@@ -27,7 +27,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                beesechurger {
                     source sourceSets.main
                 }
             }
@@ -39,7 +39,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                beesechurger {
                     source sourceSets.main
                 }
             }
@@ -50,10 +50,10 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'beesechurger', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                examplemod {
+                beesechurger {
                     source sourceSets.main
                 }
             }
