@@ -16,7 +16,8 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> event) {
         event.getRegistry().registerAll(
-                new BeesechurgerLootModifier().Serializer().setRegistryName
-                        (new ResourceLocation(Beesechurger.MOD_ID,"beesechurger_desert_pyramid")),
+                new BeesechurgerLootModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Beesechurger.MOD_ID,"beesechurger_desert_pyramid"))
+        );
     }
 }

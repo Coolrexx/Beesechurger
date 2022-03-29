@@ -12,5 +12,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class BeesechurgerItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Beesechurger.MOD_ID);
 
-    public static final RegistryObject<Item> BEESECHURGER = ITEMS.register("beesechurger", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(1).food(BeesechurgerFoods.BEESECHURGER)));
+    public static final RegistryObject<Item> BEESECHURGER = ITEMS.register("beesechurger", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(16).food(BeesechurgerFoods.BEESECHURGER)));
 }
