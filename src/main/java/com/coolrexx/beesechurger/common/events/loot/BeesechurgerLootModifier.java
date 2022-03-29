@@ -4,6 +4,7 @@ package com.coolrexx.beesechurger.common.events.loot;
 import com.google.gson.JsonObject;
 import com.mojang.realmsclient.util.JsonUtils;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -38,8 +39,8 @@ public class BeesechurgerLootModifier extends LootModifier {
         @Override
         public BeesechurgerLootModifier read(ResourceLocation name, JsonObject object, LootItemCondition[] conditionsIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
-                    new ResourceLocation(JsonUtils.getString(object,"addition")));
-            return new BeesechurgerLootModifier(conditionsIn, addition)
+                    new ResourceLocation(GsonHelper.getAsString(object, "addition")));
+            return new BeesechurgerLootModifier(conditionsIn, addition);
         }
 
         @Override
