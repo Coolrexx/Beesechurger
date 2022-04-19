@@ -1,5 +1,6 @@
 package com.coolrexx.beesechurger;
 
+import com.coolrexx.beesechurger.common.registry.BeesechurgerEffects;
 import com.coolrexx.beesechurger.common.registry.BeesechurgerItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -13,5 +14,6 @@ public class Beesechurger {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         BeesechurgerItems.ITEMS.register(bus);
+        BeesechurgerEffects.MOB_EFFECTS.register(bus);
     }
 }

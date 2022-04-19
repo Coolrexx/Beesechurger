@@ -1,8 +1,6 @@
 package com.coolrexx.beesechurger.common.registry;
 
 import com.coolrexx.beesechurger.Beesechurger;
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
